@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+	
+<head>
+	<title>Payments</title>
+</head>
+
+
+<body>
+	<h1>Send Payment</h1>
+
+	<form class="needs-validation" action="/process-payment/" method="get" enctype="multipart/form-data">
+		<label for="credit_card_number">Enter Credit Card Number: </label>
+  		<input id="credit_card_number" type="text" name="credit_card_number" value="" required/>
+
+  		</br>
+
+  		<label for="credit_card_holder">Enter Credit Card Holder: </label>
+  		<input id="credit_card_holder" type="text" name="credit_card_holder" value="" required/>
+
+  		</br>
+
+  		<label for="credit_card_expiration_date">Enter Credit Card Expiration Date: </label>
+  		<input id="credit_card_expiration_date" type="date" name="credit_card_expiration_date" min="2020-05-09" max="2030-12-31" required/>
+
+  		</br>
+
+  		<label for="credit_card_security_code">Enter Credit Card Security Code: </label>
+  		<input id="credit_card_security_code" type="text" name="credit_card_security_code" value=""/>
+
+  		</br>
+
+  		<label for="amount">Enter amount: </label>
+  		<input id="amount" type="text" name="amount" value="" required/>
+		
+		</br>
+		
+		<input type="submit" value="Send Payment" name="submit"/>
+
+	</form>
+
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+
+	<form class="needs-validation" action="/estimate-price/" method="get" enctype="multipart/form-data">
+		<label for="date">Enter date: </label>
+	  	<select id="date" name="date">
+	      <option value="1/14/2011">1/14/2011</option>
+	      <option value="1/21/2011">1/21/2011</option>
+	      <option value="1/28/2011">1/28/2011</option>
+	      <option value="1/7/2011">1/7/2011</option>
+	      <option value="2/11/2011">2/11/2011</option>
+	      <option value="2/18/2011">2/18/2011</option>
+	      <option value="2/25/2011">2/25/2011</option>
+	      <option value="2/4/2011">2/4/2011</option>
+	      <option value="3/11/2011">3/11/2011</option>
+	      <option value="3/18/2011">3/18/2011</option>
+	      <option value="3/25/2011">3/25/2011</option>
+	      <option value="3/4/2011">3/4/2011</option>
+	      <option value="4/1/2011">4/1/2011</option>
+	      <option value="4/15/2011">4/15/2011</option>
+	      <option value="4/21/2011">4/21/2011</option>
+	      <option value="4/29/2011">4/29/2011</option>
+	      <option value="4/8/2011">4/8/2011</option>
+	      <option value="5/13/2011">5/13/2011</option>
+	      <option value="5/20/2011">5/20/2011</option>
+	      <option value="5/27/2011">5/27/2011</option>
+	      <option value="5/6/2011">5/6/2011</option>
+	      <option value="6/10/2011">6/10/2011</option>
+	      <option value="6/17/2011">6/17/2011</option>
+	      <option value="6/24/2011">6/24/2011</option>
+	      <option value="6/3/2011">6/3/2011</option>
+	    </select>
+
+	    <input type="submit" value="Estimate Price" name="submit_date"/>
+
+	</form>
+
+</body>
+
+</html>
